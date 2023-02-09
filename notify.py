@@ -9,9 +9,9 @@ rrdpath = './RRD/'
 imgpath = './IMG/'
 fname = 'trend.rrd'
 
-mailreceip = "dummycuenta3@gmail.com"
+mailreceip = ""
 mailserver = 'smtp.gmail.com: 587'
-password = 'dvduuffmlhspbmjj'
+password = ''
 
 def send_alert_attached(subject,rutaImagen, datos):
     """ Envía un correo electrónico adjuntando la imagen en IMG
