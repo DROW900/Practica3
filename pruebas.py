@@ -169,7 +169,7 @@ def manipularCanva(infoSistema,infoInterfaces,indice):
     i = i+20
     c.drawString(50, h - i, "Practica 2")
     i = i+20
-    c.drawString(50, h - i, "Carlos Eduardo Muñoz Carbajal")
+    c.drawString(50, h - i, "")
     i = i+20
     c.drawString(50, h - i, "4CM13")
     i = i+60
@@ -284,7 +284,7 @@ while True:
     os.system("clear")
     print("Sistema de Administración de Red")
     print("Practica 3 - Adquisición de Información")
-    print("Carlos Eduardo Muñoz Carbajal    4CM13   2019630370\n")
+    print("    4CM13   ")
     print("1. Agregar dispositivo")
     print("2. Eliminar dispositivo")
     print("3. Generar Reporte")
