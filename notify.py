@@ -17,7 +17,7 @@ def send_alert_attached(subject,rutaImagen, datos):
     """ Envía un correo electrónico adjuntando la imagen en IMG
     """
     try:
-        mailsender = "dummycuenta3@gmail.com";
+        mailsender = "";
         msg = MIMEMultipart()
         msg['Subject'] = subject
         msg['From'] = mailsender
@@ -26,7 +26,7 @@ def send_alert_attached(subject,rutaImagen, datos):
         img = MIMEImage(fp.read())
         fp.close()
         msg.attach(img)
-        mensaje = "Muñoz Carbajal Carlos Eduardo \n"+"IP: "+ datos['direccionIP']+"\n"+"SO: "+datos['SO']+"\n"+"Comunidad: " + datos['nombreComunidad']+ "Correo contacto: " + datos['correo']
+        mensaje = " \n"+"IP: "+ datos['direccionIP']+"\n"+"SO: "+datos['SO']+"\n"+"Comunidad: " + datos['nombreComunidad']+ "Correo contacto: " + datos['correo']
         txt = MIMEText(mensaje, 'plain')
         msg.attach(txt);
         s = smtplib.SMTP(mailserver)
